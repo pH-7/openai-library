@@ -19,11 +19,11 @@ class PrivateKey
 
     public function getValue(): string
     {
-        return $this->privateKey;
+        return trim($this->privateKey);
     }
 
     private function isValid(?string $key): bool
     {
-        return !empty($key) && is_string($key);
+        return !empty($key) && strlen($key) > 1;
     }
 }
