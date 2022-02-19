@@ -17,13 +17,13 @@ class PrivateKey
         }
     }
 
-    private function isValid(?string $key): bool
-    {
-        return !empty($key) && is_string($key);
-    }
-
     public function getValue(): string
     {
         return $this->privateKey;
+    }
+
+    private function isValid(?string $key): bool
+    {
+        return !empty($key) && is_string($key);
     }
 }
