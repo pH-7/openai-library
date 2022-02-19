@@ -1,10 +1,10 @@
 <?php
 
-namespace PH7\OpenAi\Provider;
+namespace PH7\OpenAi\Api;
 
 use GuzzleHttp\Client as GuzzleClient;
 
-class OpenAi implements Providable
+class OpenAi implements Pluggable
 {
     public function __construct(private PrivateKey $privateKey, private GuzzleClient $client)
     {

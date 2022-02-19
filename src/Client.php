@@ -4,18 +4,18 @@ declare(strict_types=1);
 
 namespace PH7\OpenAi;
 
-use PH7\OpenAi\Provider\Providable;
+use PH7\OpenAi\Api\Pluggable;
 use Psr\Http\Message\ResponseInterface;
 
 class Client
 {
-    public function __construct(protected Providable $provider)
+    public function __construct(protected Pluggable $api)
     {
     }
 
     public function search(string $engine): ResponseInterface
     {
-        return $this->provider->getClient()->request(
+        return $this->api->getClient()->request(
             'POST',
             sprintf('/engines/%s/search', $engine)
         );
@@ -23,7 +23,7 @@ class Client
 
     public function classifications(): ResponseInterface
     {
-        return $this->provider->getClient()->request(
+        return $this->api->getClient()->request(
             'POST',
             '/classifications'
         );

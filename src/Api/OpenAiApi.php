@@ -1,6 +1,6 @@
 <?php
 
-namespace PH7\OpenAi\Provider;
+namespace PH7\OpenAi\Api;
 
 enum OpenAiApi: string
 {
