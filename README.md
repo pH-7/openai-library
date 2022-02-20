@@ -18,6 +18,7 @@
 ## :thought_balloon: Examples
 
 ```php
+<?php
 require_once __DIR__ . '/vendor/autoload.php'; // Include Composer's autoload
 
 use PH7\OpenAi\Client as OpenAiClient;
@@ -26,7 +27,8 @@ use PH7\OpenAi\Api\PrivateKey as OpenAiKey;
 
 $apiKey = new OpenAiKey('YOUR_OPENAI_KEY');
 $openAi = new OpenAiClient(new OpenAi($apiKey));
-$openAi->search('Some keywords');
+$openAi->search('Some keywords'); // To search
+$openAi->classifications('Some keywords'); // For OpenAI classifications
 ```
 
 ## :tada: 3rd party libraries
