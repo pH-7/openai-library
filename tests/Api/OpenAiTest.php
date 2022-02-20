@@ -7,11 +7,12 @@ namespace PH7\OpenAi\Tests\Api;
 use GuzzleHttp\Client as GuzzleClient;
 use PH7\OpenAi\Api\OpenAi;
 use Phake;
+use Phake\IMock;
 use PHPUnit\Framework\TestCase;
 
 final class OpenAiTest extends TestCase
 {
-    private OpenAi|Phake\IMock $openAi;
+    private OpenAi|IMock $openAi;
 
     protected function setUp(): void
     {
