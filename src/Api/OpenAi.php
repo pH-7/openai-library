@@ -12,10 +12,10 @@ class OpenAi implements Pluggable
     {
         $this->client = new GuzzleClient(
             [
-                'base_uri' => OpenAiApi::URL . OpenAiApi::VERSION,
+                'base_uri' => OpenAiApi::URL->value . OpenAiApi::VERSION->value,
                 'headers' => [
                     'Authorization' => sprintf('Bearer %s', $this->privateKey->getValue()),
-                    'Accept' => OpenAiApi::CONTENT_TYPE
+                    'Accept' => OpenAiApi::CONTENT_TYPE->value
                 ]
             ]
         );
