@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PH7\OpenAi\Api;
 
 enum OpenAiApi: string
