@@ -4,6 +4,7 @@ composer.lock
 
 # Tests
 phpunit.xml
+.phpunit.result.cache
 
 # Log
 .DS_Store
