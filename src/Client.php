@@ -20,8 +20,19 @@ class Client
     public function search(string $engine): ResponseInterface
     {
         return $this->api->getClient()->request(
-            'POST',
+            'GET',
             sprintf('/engines/%s/search', $engine)
+        );
+    }
+
+    /**
+     * @throws ConnectException
+     */
+    public function answers(): ResponseInterface
+    {
+        return $this->api->getClient()->request(
+            'POST',
+            '/answers'
         );
     }
 
