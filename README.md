@@ -1,4 +1,4 @@
-# PHP SDK for OpenAI and SPT-3
+# PHP SDK for OpenAI and GPT-3
 
 
 ## :book: Contents
