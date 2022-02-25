@@ -1,7 +1,7 @@
 # PHP SDK for OpenAI and GPT-3
 
 
-## :eyes: Contents
+### :eyes: Contents
 
 - [Requirements](#hammer-requirements)
 - [Examples](#thought_balloon-examples)
