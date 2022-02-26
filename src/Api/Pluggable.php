@@ -2,9 +2,9 @@
 
 namespace PH7\OpenAi\Api;
 
-use GuzzleHttp\Client as GuzzleClient;
+use Psr\Http\Client\ClientInterface;
 
 interface Pluggable
 {
-    public function getClient(): GuzzleClient;
+    public function getClient(): ClientInterface;
 }
