@@ -7,7 +7,7 @@
 - [Examples](#thought_balloon-examples)
 - [3rd Party Libraries](#tada-3rd-party-libraries)
 - [About](#cook-author)
-- Video](#me-building-this-library-)
+- [Video](#me-building-this-library-)
 - [License](#page_with_curl-license)
 
 ## :hammer: Requirements
