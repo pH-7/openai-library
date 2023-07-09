@@ -22,12 +22,12 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php'; // Include Composer's autoload
 
-use PH7\OpenAi\Client as OpenAiClient;
-use PH7\OpenAi\Api\OpenAi;
+use PH7\OpenAi\Api\OpenAi as OpenAiApi;
 use PH7\OpenAi\Api\PrivateKey as OpenAiKey;
+use PH7\OpenAi\Client as AiClient;
 
-$apiKey = new OpenAiKey('YOUR_OPENAI_KEY');
-$openAi = new OpenAiClient(new OpenAi($apiKey));
+$apiKey = new OpenAiKey('YOUR_OPENAI_KEY_HERE');
+$openAi = new AiClient( new OpenAiApi($apiKey) );
 $openAi->search('Some keywords'); // To search
 $openAi->classifications('Some keywords'); // For OpenAI classifications
 ```
@@ -48,7 +48,7 @@ You can keep in touch with me at: *hi@ph7.me* 📮
 [![Pierre-Henry Soria](https://www.gravatar.com/avatar/a210fe61253c43c869d71eaed0e90149?s=200&r=g&d=mp)](https://ph7.me "Pierre-Henry Soria")
 
 
-## Me building this library 🔥
+## Me building it! 🔥
 
 [![Watch the video][video-thumbnail]](https://www.youtube.com/watch?v=Fv4J79eQjrc)
 
